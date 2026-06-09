@@ -7,15 +7,14 @@
       name="description"
       content="Links and work from ramanda study, programmer, AI explorer, and English learner."
     />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#000000" />
     <title>donateku aril</title>
     <script>
       try {
         const savedTheme = localStorage.getItem("theme");
-        const preferredTheme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-        document.documentElement.dataset.theme = savedTheme || preferredTheme;
+        document.documentElement.dataset.theme = savedTheme || "dark";
       } catch {
-        document.documentElement.dataset.theme = "light";
+        document.documentElement.dataset.theme = "dark";
       }
     </script>
     <link rel="stylesheet" href="styles.css" />
@@ -23,7 +22,7 @@
   </head>
   <body>
     <main class="profile" aria-labelledby="profile-name">
-      <button class="theme-toggle load-item" type="button" aria-label="Aktifkan mode gelap" aria-pressed="false">
+      <button class="theme-toggle load-item" type="button" aria-label="Aktifkan mode terang" aria-pressed="true">
         <span class="theme-toggle__track" aria-hidden="true">
           <svg class="theme-toggle__sun" viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="3.5"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M18.7 5.3l-1.4 1.4M6.7 17.3l-1.4 1.4"/>
@@ -94,6 +93,13 @@
             <svg viewBox="0 0 24 24"><path d="M12 20.5S4 16.2 4 9.8A4.3 4.3 0 0 1 12 7.5a4.3 4.3 0 0 1 8 2.3c0 6.4-8 10.7-8 10.7Z"/><path d="M12 7.5v7M9.5 11.5H14a1.5 1.5 0 0 1 0 3h-4"/></svg>
           </span>
           <span>Saweria</span>
+          <span class="link-button__arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="link-button load-item" href="https://discord.gg/VUyXy2S6" target="_blank" rel="noreferrer">
+          <span class="link-button__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M8.2 7.2a9.2 9.2 0 0 1 7.6 0M7.4 17.6c3.1 1.5 6.1 1.5 9.2 0M8.5 18.8l-1.4 1.7M15.5 18.8l1.4 1.7M7.3 5.4c-2.2.7-3.7 2.6-4.3 8.8a13.3 13.3 0 0 0 4.4 3.4M16.7 5.4c2.2.7 3.7 2.6 4.3 8.8a13.3 13.3 0 0 1-4.4 3.4"/><circle cx="9" cy="12.5" r="1" class="fill"/><circle cx="15" cy="12.5" r="1" class="fill"/></svg>
+          </span>
+          <span>Discord</span>
           <span class="link-button__arrow" aria-hidden="true">↗</span>
         </a>
         <a class="link-button load-item" href="mailto:hello@ramandastudy.com">

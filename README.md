@@ -7,7 +7,7 @@ Website link-in-bio sederhana dengan tampilan minimalis bergaya Apple. Website i
 - Desain mobile-first yang responsif
 - Tampilan light mode dan dark mode
 - Toggle tema dengan ikon matahari dan bulan
-- Tema mengikuti pengaturan perangkat saat pertama dibuka
+- Dark mode digunakan secara default saat pertama dibuka
 - Pilihan tema tersimpan di browser menggunakan `localStorage`
 - Delapan tombol link yang touch-friendly
 - Animasi saat halaman dimuat
@@ -22,6 +22,7 @@ Website link-in-bio sederhana dengan tampilan minimalis bergaya Apple. Website i
 - Portfolio
 - Newsletter
 - GitHub
+- Discord
 - Saweria
 - SocialBuzz
 - Email
@@ -106,7 +107,7 @@ Warna light mode dan dark mode disimpan sebagai CSS custom properties di `styles
 }
 ```
 
-JavaScript akan membaca tema perangkat saat pertama dibuka. Setelah pengguna menekan tombol matahari atau bulan, pilihan tema akan disimpan di `localStorage`.
+Website menggunakan dark mode saat pertama dibuka. Setelah pengguna menekan tombol matahari atau bulan, tema berubah menjadi light mode dan pilihan tersebut disimpan di `localStorage`.
 
 ## Teknologi
 
